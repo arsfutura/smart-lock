@@ -1,10 +1,13 @@
-Smart Lock consists of 4 parts: Door API, Camera, Face Recognition API and Engine.
+# Smart Lock
 
-[Image which visualizes Smart Lock parts]
+![Smart Lock](images/smart-lock-illustration.png)
+
+Smart Lock is a face recognition door lock we built and installed in [Ars Futura](https://arsfutura.com) office. 
+It consists of four parts: **Door API**, **Camera**, **Face Recognition API** and **Engine**. Check out the [blog post](https://medium.com/@culuma/face-recognition-smart-lock-a5adcd0d585b) for more details.  
 
 ## Door API 
 
-Door API is component which provides `/unlock` endpoint for unlocking the door.
+Door API is a component which provides `/unlock` endpoint for unlocking the door.
 
 This component is built for unlocking doors with [electric strike](https://en.wikipedia.org/wiki/Electric_strike). 
 Doors with electric strike are controlled by applying electric current to strike which unlocks (fail-secure) or locks it
@@ -21,8 +24,6 @@ logic for controlling relay is pretty much the same.
 
 > WARNING: If you are working with alternating current, be extremely cautious! Don't try anything without the 
 > supervision of trained professional!
-
-[Slika RPi i relej]
 
 Once you have all hardware setup, you can run Door API by running following commands on Raspberry Pi: 
 
@@ -63,8 +64,6 @@ Camera provides video stream which can be easily connected to programmatically.
 This component is built for providing video stream on top of Raspberry Pi with 
 [camera module](https://www.makershop.de/en/raspberry-pi/pi-kameramodul/).
 
-[slika kamere]
-
 You can run Camera component by running following commands on Raspberry Pi (make sure you [configure](https://www.raspberrypi.org/documentation/configuration/camera.md) camera before using it): 
 ```shell script
 cd camera
@@ -89,8 +88,6 @@ endpoint for classifying people in images.
 Check out [face-recognition](https://github.com/arsfutura/face-recognition) repository for 
 instructions on how to generate Face Recognition API. Also, if your are interested in inner workings of face-recognition, 
 check out this [blog post](https://arsfutura.co/magazine/face-recognition-with-facenet-and-mtcnn/) which explains it.
-
-TODO link do advices for training
 
 ## Engine
 
