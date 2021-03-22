@@ -3,7 +3,7 @@
 ![Smart Lock](images/smart-lock-illustration.png)
 
 Smart Lock is a face recognition door lock we built and installed in [Ars Futura](https://arsfutura.com) office. 
-It consists of four parts: **Door API**, **Camera**, **Face Recognition API** and **Engine**. Check out the [blog post](https://medium.com/@culuma/face-recognition-smart-lock-a5adcd0d585b) for more details.  
+It consists of four parts: **Door API**, **Camera**, **Face Recognition API** and **Engine**. Check out the [blog post](https://arsfutura.com/magazine/building-a-face-recognition-powered-door-lock) for more details.  
 
 ## Door API 
 
